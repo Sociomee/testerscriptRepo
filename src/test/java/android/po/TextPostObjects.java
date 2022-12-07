@@ -198,6 +198,7 @@ public class TextPostObjects {
 
     @FindBy(id = "com.sociomee.app:id/cl_blog")
     public MobileElement article_button;
+    new
 
     By by_permission_button_2 = By.id("com.android.permissioncontroller:id/permission_allow_foreground_only_button");
     By by_login_button_2 = By.id("com.sociomee.app:id/txt_log_in");
