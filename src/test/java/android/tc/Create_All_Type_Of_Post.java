@@ -242,5 +242,20 @@ public class Create_All_Type_Of_Post
         }
 
     }
+    @Test
+    public void Article_post() throws InterruptedException
+    {
+        BasePage basePage = new BasePage();
+        TextPostObjects tp = new TextPostObjects();
+        basePage.login();
+        Thread.sleep(2000);
+        tp.add_feed.click();
+        Thread.sleep(2000);
+        tp.article_button.click();
+
+
+
+
+    }
 }
 
