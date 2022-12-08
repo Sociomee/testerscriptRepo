@@ -252,8 +252,6 @@ public class Create_All_Type_Of_Post
         tp.add_feed.click();
         Thread.sleep(2000);
         tp.article_button.click();
-        tp.
-
 
 
 

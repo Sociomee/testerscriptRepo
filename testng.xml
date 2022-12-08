@@ -11,7 +11,10 @@
         <!--class name="android.Launch_and_Kill" /-->
         <!--class name="android.tc.Login"/-->
         <!--class name="android.tc.Signup" /-->
-        <class name="android.tc.Create_All_Type_Of_Post">
+        <!--class name="android.tc.Create_All_Type_Of_Post"/-->
+        <!--class name="android.tc.Edit_Post_All_Functionality"/-->
+        <class name="android.tc.Already_created_post_functionality">
+
 
         </class>
 

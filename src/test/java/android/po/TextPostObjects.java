@@ -198,7 +198,42 @@ public class TextPostObjects {
 
     @FindBy(id = "com.sociomee.app:id/cl_blog")
     public MobileElement article_button;
-    new
+
+    @FindBy(id = "com.sociomee.app:id/img_like_post")
+    public MobileElement like_button;
+
+    @FindBy(id = "com.sociomee.app:id/img_comment_post")
+    public MobileElement comment_button;
+
+    @FindBy(id = "com.sociomee.app:id/edt_add_comment")
+    public MobileElement add_comment;
+
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.ImageView[2]")
+    public MobileElement like_second_comment;
+
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.TextView[6]")
+    public MobileElement reply_second_comment;
+
+    @FindBy(id = "com.sociomee.app:id/img_send")
+    public MobileElement comment_send_button;
+
+    @FindBy(id = "com.sociomee.app:id/img_send_comment")
+    public MobileElement comment_reply_send_button;
+
+    @FindBy(id = "com.sociomee.app:id/edt_add_comment_reply")
+    public MobileElement add_reply_comment;
+
+    @FindBy(id = "com.sociomee.app:id/img_toolbar_back")
+    public MobileElement back_from_comment_reply;
+
+    @FindBy(id = "com.sociomee.app:id/img_share_post")
+    public MobileElement share_post;
+
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]/android.widget.TextView[3]")
+    public MobileElement send4th_button;
+
+
+
 
     By by_permission_button_2 = By.id("com.android.permissioncontroller:id/permission_allow_foreground_only_button");
     By by_login_button_2 = By.id("com.sociomee.app:id/txt_log_in");

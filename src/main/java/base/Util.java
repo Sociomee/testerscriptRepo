@@ -20,10 +20,10 @@ public class Util {
     public static void scrollDown() {
         Dimension dimension = AppDriver.getDriver().manage().window().getSize();
 
-        Double scrollHeightStart = dimension.getHeight() * 0.5;
+        Double scrollHeightStart = dimension.getHeight() * 0.8;
         int scrollStart = scrollHeightStart.intValue();
 
-        Double scrollHeightEnd = dimension.getHeight() * 0.2;
+        Double scrollHeightEnd = dimension.getHeight() * 0.5;
         int scrollEnd = scrollHeightEnd.intValue();
 
         new TouchAction((PerformsTouchActions) AppDriver.getDriver())
