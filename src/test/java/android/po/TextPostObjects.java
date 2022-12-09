@@ -3,7 +3,10 @@ package android.po;
 import base.AppDriver;
 import base.Util;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.touch.LongPressOptions;
+import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.touch.TouchActions;
 import org.openqa.selenium.support.FindBy;
@@ -90,7 +93,7 @@ public class TextPostObjects {
     @FindBy(id = "com.sociomee.app:id/edt_caption")
     public MobileElement enter_text_for_post;
 
-    @FindBy(xpath= "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.TextView"
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.TextView"
     )
     public MobileElement posted_text;
 
@@ -232,6 +235,50 @@ public class TextPostObjects {
     @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]/android.widget.TextView[3]")
     public MobileElement send4th_button;
 
+    @FindBy(id = "com.sociomee.app:id/img_more_options")
+    public MobileElement three_dot_menu_for_recent_post;
+
+    @FindBy(id = "com.sociomee.app:id/txt_menu_2")
+    public MobileElement turn_off_post_comment;
+
+    @FindBy(id = "com.sociomee.app:id/txt_menu_2")
+    public MobileElement turn_on_post_comment;
+
+    @FindBy(id = "com.sociomee.app:id/touch_outside")
+    public MobileElement touch_outside;
+
+
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView[1]")
+    public MobileElement first_like;
+
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[2]/android.widget.ImageView")
+    public MobileElement omg_react_icon;
+
+    @FindBy(id = "com.sociomee.app:id/txt_liked_by_post")
+    public MobileElement total_likes_reacts;
+
+    @FindBy(xpath = "com.sociomee.app:id/img_bookmark_post")
+    public MobileElement bookmark_button;
+
+
+    @FindBy(id = "com.sociomee.app:id/txt_days")
+    public MobileElement reaction_display;
+
+    @FindBy(id = "com.sociomee.app:id/img_back")
+    public MobileElement back_from_like_screen;
+
+    @FindBy(id = "com.sociomee.app:id/txt_menu_4")
+    public MobileElement delete_button;
+
+    @FindBy(id = "com.sociomee.app:id/txt_proceed")
+    public MobileElement proceed_to_delete;
+
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.ImageView")
+    public MobileElement post_deleted;
+
+
+
+
 
 
 
@@ -253,6 +300,7 @@ public class TextPostObjects {
         down_arrow_button.click();
         other_country_code.click();
         continue_button_login.click();
+
 
 
     }

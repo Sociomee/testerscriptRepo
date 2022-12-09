@@ -67,7 +67,7 @@ public class BasePage {
        login_button.click();
        new WebDriverWait(AppDriver.getDriver(),1000).until(ExpectedConditions.presenceOfElementLocated(by_email_field));
        email_field.sendKeys("7752854268");
-       password_field.sendKeys("Abhinav@124");
+       password_field.sendKeys("Abhinav@125");
        continue_button.click();
        Thread.sleep(5000);
 
