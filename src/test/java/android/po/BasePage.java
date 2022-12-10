@@ -14,7 +14,7 @@ import static base.AppFactory.driver;
 
 public class BasePage {
 
-    public  BasePage(){
+    public BasePage() {
 
         PageFactory.initElements(new AppiumFieldDecorator(AppDriver.getDriver()), this);
     }
@@ -35,7 +35,7 @@ public class BasePage {
     public MobileElement continue_button;
 
     @FindBy(id = "com.sociomee.app:id/img_hamburger_menu")
-     public MobileElement hamburger_button;
+    public MobileElement hamburger_button;
 
     @FindBy(id = "com.sociomee.app:id/txt_polls")
     public MobileElement poll;
@@ -50,7 +50,7 @@ public class BasePage {
     public MobileElement invalid_password;
 
 
-   // @FindBy(id = "com.sociomee.app:id/img_logo")
+    // @FindBy(id = "com.sociomee.app:id/img_logo")
     //public MobileElement app_logo;
 
     By by_permission = By.id("com.android.permissioncontroller:id/permission_allow_foreground_only_button");
@@ -61,22 +61,34 @@ public class BasePage {
 
 
     public void login() throws InterruptedException {
-       new WebDriverWait(AppDriver.getDriver(),1000).until(ExpectedConditions.presenceOfElementLocated(by_permission));
-       permission.click();
-       new WebDriverWait(AppDriver.getDriver(),1000).until(ExpectedConditions.presenceOfElementLocated(by_login_button));
-       login_button.click();
-       new WebDriverWait(AppDriver.getDriver(),1000).until(ExpectedConditions.presenceOfElementLocated(by_email_field));
-       email_field.sendKeys("7752854268");
-       password_field.sendKeys("Abhinav@125");
-       continue_button.click();
-       Thread.sleep(5000);
+        new WebDriverWait(AppDriver.getDriver(), 1000).until(ExpectedConditions.presenceOfElementLocated(by_permission));
+        permission.click();
+        new WebDriverWait(AppDriver.getDriver(), 1000).until(ExpectedConditions.presenceOfElementLocated(by_login_button));
+        login_button.click();
+        new WebDriverWait(AppDriver.getDriver(), 1000).until(ExpectedConditions.presenceOfElementLocated(by_email_field));
+        email_field.sendKeys("7752854268");
+        password_field.sendKeys("Abhinav@125");
+        continue_button.click();
+        Thread.sleep(5000);
 
 
         // MobileElement account = driver.findElementById("com.sociomee.app:id/img_logo");
-       // Assert.assertTrue(account.isDisplayed(),"Login not successfull");
+        // Assert.assertTrue(account.isDisplayed(),"Login not successfull");
 
 
     }
 
+    public void login_another_id() throws InterruptedException {
+        new WebDriverWait(AppDriver.getDriver(), 1000).until(ExpectedConditions.presenceOfElementLocated(by_permission));
+        permission.click();
+        new WebDriverWait(AppDriver.getDriver(), 1000).until(ExpectedConditions.presenceOfElementLocated(by_login_button));
+        login_button.click();
+        new WebDriverWait(AppDriver.getDriver(), 1000).until(ExpectedConditions.presenceOfElementLocated(by_email_field));
+        email_field.sendKeys("9140712062");
+        password_field.sendKeys("Abhinav@125");
+        continue_button.click();
+        Thread.sleep(5000);
 
+
+    }
 }

@@ -276,6 +276,54 @@ public class TextPostObjects {
     @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.ImageView")
     public MobileElement post_deleted;
 
+    @FindBy(id = "com.sociomee.app:id/txt_menu_2")
+    public MobileElement turn_off_post_notification;
+
+    @FindBy(id = "com.sociomee.app:id/txt_menu_2")
+    public MobileElement turn_on_post_notification;
+
+    @FindBy(id = "com.sociomee.app:id/txt_menu_5")
+    public MobileElement unfollow_user;
+
+    @FindBy(id = "com.sociomee.app:id/txt_menu_5")
+    public MobileElement follow_user;
+
+    @FindBy(id = "com.sociomee.app:id/txt_menu_6")
+    public MobileElement block_user;
+
+
+    @FindBy(id = "com.sociomee.app:id/cl_settings")
+    public MobileElement setting_button;
+
+    @FindBy(id = "com.sociomee.app:id/txt_account")
+    public MobileElement account_button;
+
+    @FindBy(id = "com.sociomee.app:id/txt_blocked_people")
+    public MobileElement blocked_people_button;
+
+    @FindBy(id = "com.sociomee.app:id/img_user_option")
+    public MobileElement user_profile_three_dot_menu;
+
+    @FindBy(id = "com.sociomee.app:id/txt_menu_2")
+    public MobileElement unblock_user;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
