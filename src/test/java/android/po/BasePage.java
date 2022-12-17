@@ -49,7 +49,6 @@ public class BasePage {
     @FindBy(id = "com.sociomee.app:id/txt_invalid_email_pass")
     public MobileElement invalid_password;
 
-
     // @FindBy(id = "com.sociomee.app:id/img_logo")
     //public MobileElement app_logo;
 
@@ -67,7 +66,7 @@ public class BasePage {
         login_button.click();
         new WebDriverWait(AppDriver.getDriver(), 1000).until(ExpectedConditions.presenceOfElementLocated(by_email_field));
         email_field.sendKeys("7752854268");
-        password_field.sendKeys("Abhinav@125");
+        password_field.sendKeys("Abhinav@999");
         continue_button.click();
         Thread.sleep(5000);
 

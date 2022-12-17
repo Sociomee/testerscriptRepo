@@ -3,12 +3,11 @@ package android.tc;
 import android.po.BasePage;
 import android.po.TextPostObjects;
 import base.Util;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import static base.AppFactory.driver;
 
-public class Create_All_Type_Of_Post
+public class Social_Feed_Create_All_Type_Of_Post
 
 {
 
@@ -24,10 +23,13 @@ public class Create_All_Type_Of_Post
         Thread.sleep(2000);
         Util.scrollUp();
         Thread.sleep(2000);
-        tp.enter_text_for_post.sendKeys("Automated-Lucifer-MS");
+        tp.enter_text_for_post.sendKeys("Automated 1964 Pontiac GTO");
         tp.tap_to_post_text.click();
         Thread.sleep(7000);
-        System.out.println(tp.posted_text.getText());
+        Util.scrollUp();
+       Util.scrollUp();
+        Util.scrollTillTextDisplayed("Automated 1964 Pontiac GTO");
+       Thread.sleep(5000);
 
     }
 
@@ -49,10 +51,14 @@ public class Create_All_Type_Of_Post
         Thread.sleep(5000);
         tp.next_from_crop_screen.click();
         tp.next_from_filter_screen.click();
-        tp.image_caption.sendKeys("Automated-PB");
+        tp.image_caption.sendKeys("Automated-1970 Chevrolet Chevelle");
         tp.continue_button_login.click();
         tp.tap_to_post_text.click();
-        Thread.sleep(1000);
+        Thread.sleep(5000);
+        Util.scrollUp();
+        Util.scrollUp();
+        Util.scrollTillTextDisplayed("Automated-1970 Chevrolet Chevelle");
+        Thread.sleep(5000);
 
     }
 
@@ -63,11 +69,11 @@ public class Create_All_Type_Of_Post
         BasePage basePage = new BasePage();
         TextPostObjects tp = new TextPostObjects();
         basePage.login();
-        Thread.sleep(4000);
+        Thread.sleep(5000);
         tp.add_feed.click();
         Thread.sleep(4000);
         tp.threat_button.click();
-        tp.enter_text.sendKeys("Automated-MorningStar");
+        tp.enter_text.sendKeys("Automated-1970 Plymouth Road Runner");
         tp.alert_level.click();
         Thread.sleep(2000);
         tp.severe.click();
@@ -75,7 +81,12 @@ public class Create_All_Type_Of_Post
         tp.select_range.click();
         tp.continue_start.click();
         tp.post_button.click();
+        Util.scrollUp();
+        Util.scrollUp();
         Thread.sleep(4000);
+        Util.scrollTillTextDisplayed("Automated-1970 Plymouth Road Runner");
+        Thread.sleep(4000);
+
 
     }
 
@@ -86,12 +97,12 @@ public class Create_All_Type_Of_Post
         BasePage basePage = new BasePage();
         TextPostObjects tp = new TextPostObjects();
         basePage.login();
-        Thread.sleep(4000);
+        Thread.sleep(5000);
         tp.add_feed.click();
         Thread.sleep(4000);
         tp.thought_button.click();
         Thread.sleep(4000);
-        tp.thought_text.sendKeys("My-Automated-Thought");
+        tp.thought_text.sendKeys("My-Automated-1967 chevrolet camaro");
         Thread.sleep(2000);
         tp.thought_text_color.click();
         tp.thought_background_color.click();
@@ -101,7 +112,11 @@ public class Create_All_Type_Of_Post
         tp.use_current_location.click();
         Thread.sleep(2000);
         tp.tap_to_post_text.click();
-        Thread.sleep(3000);
+        Util.scrollUp();
+        Util.scrollUp();
+        Thread.sleep(5000);
+        Util.scrollTillTextDisplayed("My-Automated-1967 chevrolet camaro");
+        Thread.sleep(4000);
 
     }
 
@@ -118,7 +133,7 @@ public class Create_All_Type_Of_Post
         Util.scrollDown();
         tp.poll_button.click();
         Thread.sleep(4000);
-        tp.poll_text.sendKeys("Automating_the_poll");
+        tp.poll_text.sendKeys("Automating_the_poll_1965_SHELBY_MUSTANG");
         tp.poll_option1.sendKeys("Tesla");
         tp.poll_option2.sendKeys("Dodge Charger");
         tp.poll_duration.click();
@@ -130,6 +145,11 @@ public class Create_All_Type_Of_Post
         tp.save_poll_duration.click();
         Thread.sleep(2000);
         tp.tap_to_post_text.click();
+        Thread.sleep(5000);
+        Util.scrollUp();
+        Util.scrollUp();
+        Util.scrollTillTextDisplayed("Automating_the_poll_1965_SHELBY_MUSTANG");
+        Thread.sleep(5000);
 
     }
 
@@ -144,8 +164,12 @@ public class Create_All_Type_Of_Post
         tp.add_feed.click();
         Thread.sleep(4000);
         tp.recommendation_button.click();
-        tp.recommendation_text.sendKeys("I am seeking recommendation for aftermarket exhaust");
+        tp.recommendation_text.sendKeys("I am seeking recommendation for aftermarket exhaust of 2015 Dodge challenger");
         tp.tap_to_post_text.click();
+        Thread.sleep(4000);
+        Util.scrollUp();
+        Util.scrollUp();
+        Util.scrollTillTextDisplayed("I am seeking recommendation for aftermarket exhaust of 2015 Dodge challenger");
         Thread.sleep(4000);
 
     }
@@ -165,16 +189,20 @@ public class Create_All_Type_Of_Post
         tp.permission_to_use_camera.click();
         Util.camera_click_button();
         Util.camera_click_button();
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         tp.image_captured_successful.click();
-        tp.image_caption.sendKeys("Automated-PB");
+        tp.image_caption.sendKeys("Automated-PB-FORD-FAIR-LANE");
         tp.continue_button_login.click();
         tp.tap_to_post_text.click();
-        Thread.sleep(1000);
+        Thread.sleep(5000);
+        Util.scrollUp();
+        Util.scrollUp();
+        Util.scrollTillTextDisplayed("Automated-PB-FORD-FAIR-LANE");
+
 
     }
 
-    @Test
+   /* @Test
     public void Media_post_multiple_images() throws InterruptedException
     {
 
@@ -255,6 +283,6 @@ public class Create_All_Type_Of_Post
 
 
 
-    }
+    }*/
 }
 

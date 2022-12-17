@@ -1,14 +1,12 @@
 package base;
 
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.PerformsTouchActions;
-import io.appium.java_client.TouchAction;
+import io.appium.java_client.*;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
-import io.appium.java_client.FindsByAndroidUIAutomator;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
@@ -58,10 +56,15 @@ public class Util {
         TouchAction touchAction = new TouchAction(driver);
         touchAction.tap(PointOption.point(534, 2030)).perform();
 
+    }
+
+    public static void scrollTillTextDisplayed(String exactText) {
+
+        ((AndroidDriver<MobileElement>) AppDriver.getDriver()).findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(\""+exactText+"\").instance(0))").isDisplayed();
 
 
     }
 
+    }
 
-}
 
