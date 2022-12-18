@@ -151,10 +151,10 @@ public class TextPostObjects {
     @FindBy(id = "com.sociomee.app:id/txt_duration_from")
     public MobileElement poll_duration;
 
-    @FindBy(xpath = "//android.widget.TextView[@content-desc=\"Wed, 14 Dec\"]")
+    @FindBy(xpath = "//android.widget.TextView[@content-desc=\"Sun, 18 Dec\"]")
     public MobileElement poll_start_date;
 
-    @FindBy(xpath = "//android.widget.TextView[@content-desc=\"Fri, 16 Dec\"]")
+    @FindBy(xpath = "//android.widget.TextView[@content-desc=\"Tue, 20 Dec\"]")
     public MobileElement poll_end_date;
 
     @FindBy(id = "com.sociomee.app:id/confirm_button")
@@ -318,6 +318,7 @@ public class TextPostObjects {
 
     @FindBy(xpath = "com.sociomee.app:id/txtCommentFirst")
     public MobileElement latest_comment_on_post_from_social_feed;
+
 
 
 

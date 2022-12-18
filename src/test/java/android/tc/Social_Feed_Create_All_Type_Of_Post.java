@@ -3,6 +3,7 @@ package android.tc;
 import android.po.BasePage;
 import android.po.TextPostObjects;
 import base.Util;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import static base.AppFactory.driver;
@@ -10,6 +11,7 @@ import static base.AppFactory.driver;
 public class Social_Feed_Create_All_Type_Of_Post
 
 {
+    // ******************************* // TESTING AND VALIDATING TEXT POST \\ ****************8******************** \\
 
    @Test
     public void Text_post() throws InterruptedException
@@ -202,7 +204,7 @@ public class Social_Feed_Create_All_Type_Of_Post
 
     }
 
-   /* @Test
+    @Test
     public void Media_post_multiple_images() throws InterruptedException
     {
 
@@ -226,8 +228,14 @@ public class Social_Feed_Create_All_Type_Of_Post
         tp.next_from_crop_screen.click();
         Thread.sleep(2000);
         tp.continue_button_login.click();
+        Thread.sleep(4000);
+        tp.enter_text_for_post.sendKeys("Automated-Bumblebee");
         tp.tap_to_post_text.click();
-        Thread.sleep(1000);
+        Thread.sleep(5000);
+        Util.scrollUp();
+        Util.scrollUp();
+        Thread.sleep(2000);
+        Util.scrollTillTextDisplayed("Automated-Bumblebee");
 
     }
 
@@ -243,6 +251,7 @@ public class Social_Feed_Create_All_Type_Of_Post
         Thread.sleep(2000);
         tp.select_media.click();
         tp.select_gallery_for_media.click();
+        Thread.sleep(2000);
         tp.allow_image_from_device.click();
         Thread.sleep(2000);
         tp.grid_select_image.click();
@@ -257,19 +266,10 @@ public class Social_Feed_Create_All_Type_Of_Post
         tp.continue_button_login.click();
         Thread.sleep(2000);
         tp.remove_media.click();
-        tp.multiple_image_counter.getText();
-        String act_media_count=tp.multiple_image_counter.getText();
-        System.out.println(act_media_count);
-        String desired_media_count="2  media";
-        if (act_media_count.equals(desired_media_count))
-        {
-            System.out.println("pass");
-        }
-        else {
-            System.out.println("fail");
-        }
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//*[contains(@text,'2  media')]")).isDisplayed();
 
-    }
+    }/*
     @Test
     public void Article_post() throws InterruptedException
     {
