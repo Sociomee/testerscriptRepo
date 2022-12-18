@@ -382,8 +382,8 @@ public class Social_feed_already_created_post_functionality {
         Thread.sleep(2000);
         driver.findElement(By.xpath("//*[contains(@text,'second')]")).isDisplayed();
 
-    }
 
+    }
     }
 
 
