@@ -8,9 +8,7 @@ import io.appium.java_client.touch.LongPressOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-
 import java.time.Duration;
-
 import static base.AppFactory.driver;
 
 

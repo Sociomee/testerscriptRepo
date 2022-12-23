@@ -5,13 +5,12 @@ import android.po.TextPostObjects;
 import base.Util;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-
 import static base.AppFactory.driver;
 
 public class Social_Feed_Create_All_Type_Of_Post
 
 {
-    // ******************************* // TESTING AND VALIDATING TEXT POST \\ ************************************ \\
+    // *********************************** // TESTING AND VALIDATING TEXT POST \\ ******************************************* \\
 
    @Test
     public void Text_post() throws InterruptedException
@@ -34,7 +33,7 @@ public class Social_Feed_Create_All_Type_Of_Post
        Thread.sleep(5000);
 
     }
-      // ******************************* // TESTING AND VALIDATING MEDIA POST \\ ************************************ \\
+      // ******************************* // TESTING AND VALIDATING MEDIA POST THROUGH GALLERY \\ ************************************ \\
 
     @Test
     public void Media_post_through_gallery() throws InterruptedException
@@ -66,7 +65,7 @@ public class Social_Feed_Create_All_Type_Of_Post
     }
 
 
-     // ******************************* // TESTING AND VALIDATING THREAT POST \\ ************************************ \\
+     // *********************************** // TESTING AND VALIDATING THREAT POST \\ ****************************************** \\
 
     @Test
     public void Threat_post() throws InterruptedException
@@ -95,7 +94,7 @@ public class Social_Feed_Create_All_Type_Of_Post
 
 
     }
-    // ******************************* // TESTING AND VALIDATING THOUGHT POST \\ ************************************ \\
+    // *********************************** // TESTING AND VALIDATING THOUGHT POST \\ ***************************************** \\
 
     @Test
     public void Thought_post() throws InterruptedException
@@ -126,7 +125,7 @@ public class Social_Feed_Create_All_Type_Of_Post
         Thread.sleep(4000);
 
     }
-    // ******************************* // TESTING AND VALIDATING POLL POST \\ ************************************ \\
+    // ************************************ // TESTING AND VALIDATING POLL POST \\ ******************************************* \\
 
     @Test
     public void Poll_post() throws InterruptedException
@@ -161,7 +160,7 @@ public class Social_Feed_Create_All_Type_Of_Post
 
     }
 
-    // **************************** // TESTING AND VALIDATING RECOMMENDATION POST \\ ******************************** \\
+    // ********************************* // TESTING AND VALIDATING RECOMMENDATION POST \\ ************************************* \\
 
     @Test
     public void Recommendation_post() throws InterruptedException
@@ -184,7 +183,7 @@ public class Social_Feed_Create_All_Type_Of_Post
 
     }
 
-    // **************************** // TESTING AND VALIDATING MEDIA POST THROUGH CAMERA \\ ******************************** \\
+    // ********************************* // TESTING AND VALIDATING MEDIA POST THROUGH CAMERA \\ ******************************** \\
 
     @Test
     public void Media_post_through_camera() throws InterruptedException
@@ -213,7 +212,7 @@ public class Social_Feed_Create_All_Type_Of_Post
 
 
     }
-    // ******************** // TESTING AND VALIDATING MEDIA POST FOR MULTIPLE IMAGES \\ ***************************** \\
+    // *************************** // TESTING AND VALIDATING MEDIA POST FOR MULTIPLE IMAGES \\ ********************************* \\
 
     @Test
     public void Media_post_multiple_images() throws InterruptedException
@@ -250,7 +249,7 @@ public class Social_Feed_Create_All_Type_Of_Post
 
     }
 
-    // *********** // TESTING AND VALIDATING REMOVE PARTICULAR MEDIA WHILE CREATING MULTIPLE MEDIA POST  \\ ********** \\
+    // ****************** // TESTING AND VALIDATING REMOVE PARTICULAR MEDIA WHILE CREATING MULTIPLE MEDIA POST  \\ ***************** \\
 
     @Test
     public void Media_post_remove_particular_media() throws InterruptedException
